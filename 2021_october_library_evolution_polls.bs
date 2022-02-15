@@ -1,0 +1,133 @@
+<pre class='metadata'>
+Title: 2021 October Library Evolution and Concurrency Polls on Networking and Executors
+Shortname: D2452
+Revision: 0
+Status: D
+Group: WG21
+Audience: WG21
+Editor: Bryce Adelstein Lelbach (he/him/his) — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
+Editor: Fabio Fracassi — Library Evolution Vice Chair, CODE University of Applied Sciences, f.fracassi@gmx.net
+Editor: Ben Craig — Library Evolution Vice Chair, NI, ben.craig@gmail.com
+URL: https://wg21.link/P2452
+!Source: <a href="https://github.com/brycelelbach/wg21_p2452_2021_october_library_evolution_polls/blob/main/2021_october_library_evolution_polls.bs">GitHub</a>
+Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p2452_2021_october_library_evolution_polls/issues
+Metadata Order: Editor, Source, Issue Tracking, Project, Audience
+Markup Shorthands: markdown yes
+Toggle Diffs: no
+No Abstract: yes
+Boilerplate: style-syntax-highlighting off
+Default Biblio Display: direct
+</pre>
+
+# Introduction # {#introduction}
+
+This paper contains the decision polls that the C++ Library Evolution group
+  and C++ Concurrency group will take in October of 2021 on Networking and
+  Executors.
+
+# Related Reading # {#related-reading}
+
+* [[P2300R2]]: `std::execution`
+* [[P2444R0]]: The Asio asynchronous model
+* [[P2464R0]]: Ruminations on networking and executors
+* [[P2469R0]]: Response to P2464: The Networking TS is baked, P2300 Sender/Receiver is not
+
+# Voting # {#voting}
+
+These decision polls will be conducted electronically; see [[P2195R2]] for
+  more information on electronic voting procedures.
+
+All committee members may vote, but if you have not participated in the Library
+  Evolution discussions of a poll, please choose to not vote.
+
+## How to Vote ## {#how-to-vote}
+
+<b><a href="https://documents.isocpp.org/index.php/apps/forms/aR9TpxeSpJAdP2wz">Vote here</a></b>
+
+A documents.isocpp.org account is necessary to vote.
+If you have an isocpp.org/papers account, a documents.isocpp.org account has
+  been created for you.
+Just go to documents.isocpp.org and reset your password.
+Email <a href="mailto:brycelelbach@gmail.com">Bryce Adelstein Lelbach</a> if you
+  do not have an account or are having trouble accessing your account.
+
+If you see "Form not found" when you go to the above link, you are not signed
+  in to documents.isocpp.org.
+Go to documents.isocpp.org and sign in first.
+
+You will not receive a confirmation email after voting.
+The Library Evolution chairs will send a confirmation to all voters before the
+  close of the poll.
+
+If you need to change how you voted or have any questions or issues about
+  voting, please email
+  <a href="mailto:brycelelbach@gmail.com">Bryce Adelstein Lelbach</a>.
+
+## Voting Timeline ## {#voting-timeline}
+
+- 2021-10-04: Discussion telecon and start of the polling period.
+- 2021-10-08: End of the polling period.
+
+# Polls # {#poll}
+
+Each poll consists of a statement; you vote on whether you support the
+  statement.
+All polls will be 5-way polls; you'll vote either "strongly favor",
+  "weakly favor", "neutral", "weakly against", or "strongly against".
+
+All committee members may vote, but if you have not participated in the
+  Library Evolution discussions of a poll (in-person, over telecon, or
+  over email), please consider whether you sufficiently understand the
+  topic to be able to vote in an informed manner.
+If you do not, please choose to not participate in the poll.
+
+If you do not want to participate in a poll, select the "I do not want to
+  participate in this poll" option.
+Those who do not participate in a poll will not be counted or recorded.
+Voting neutral is not the same as choosing to not participate; please
+  don't vote neutral if you did not participate in the discussions of
+  the poll.
+
+Each poll has a comment field.
+Please write a few sentences explaining the rationale for your vote.
+We recommend drafting your comments in a text editor and then pasting them
+  into the polling system.
+
+Poll results and selected comments will be shared with Library Evolution after
+  the end of the polling period, including attribution of your votes and
+  comments.
+
+If you want to discuss the polls or how you plan on voting, please start an
+  email thread on the
+  <a href="lib-ext@lists.isocpp.org">Library Evolution mailing list</a>.
+
+You will not receive a confirmation email after voting.
+
+If you need to see how you voted, change how you voted, or have any questions
+  or issues about voting, please contact the Library Evolution chair.
+
+## Poll 1: Networking TS Model Is A Good Basis ## {#poll-1}
+
+The Networking TS/Asio async model [[P2444R0]] is a good basis for most
+  asynchronous use cases, including networking, parallelism, and GPUs.
+
+## Poll 2: Sender/Receiver Model Is A Good Basis ## {#poll-2}
+
+The sender/receiver model [[P2300R2]] is a good basis for most asynchronous use
+  cases, including networking, parallelism, and GPUs.
+
+## Poll 3: Stop Pursuing The Networking TS ## {#poll-3}
+
+Stop pursuing the Networking TS/Asio design [[P2444R0]] as the C++ Standard
+  Library's answer for networking.
+
+## Poll 4: Sender/Receiver Networking ## {#poll-4}
+
+Networking in the C++ Standard Library should be based on the sender/receiver
+  model [[P2300R2]].
+
+## Poll 5: Secure Sockets ## {#poll-5}
+
+It is acceptable to ship socket-based networking in the C++ Standard Library
+  that does not support secure sockets (TLS/DTLS).
+
